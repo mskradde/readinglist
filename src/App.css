@@ -1,1 +1,31 @@
+.app {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: #f5f7fa;
+}
 
+.app > * {
+  flex-basis: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  background: var(--bg-background);
+}
+
+header > .header__input {
+  font-size: 0.9rem;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 50px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 25px;
+  background-image: lvar(--bg-background);
+}
