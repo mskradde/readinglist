@@ -1,0 +1,28 @@
+{
+  "books": [
+    {
+      "title": "Steve Jobs: Die autorisierte Biographie",
+      "author": "Walter Isaacson",
+      "read": "false",
+      "id": 1
+    },
+    {
+      "title": "Das Cafe´am Rande der Welt",
+      "author": "John Strelecky",
+      "read": "true",
+      "id": 2
+    },
+    {
+      "title": "Der nasse Fisch",
+      "author": "Volker Kutscher",
+      "read": "true",
+      "id": 3
+    },
+    {
+      "title": "NSA",
+      "author": "Andreas Eschbach",
+      "read": "true",
+      "id": 4
+    }
+  ]
+}
