@@ -35,7 +35,7 @@ function AddBooks() {
           Author:
           <input value={author} onChange={handleAuthorChange} />
         </label>
-        <input type="submit" value="addBook" />
+        <input type="submit" value="addBook" disabled={!title || !author} />
       </form>
       <Link to="/">Books</Link>
     </>
