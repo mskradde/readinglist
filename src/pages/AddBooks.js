@@ -5,6 +5,7 @@ import { addNewBook } from "../api/BooksApi";
 function AddBooks() {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
+  const [loading, setLoading] = useState(false);
 
   function handleTitleChange(event) {
     setTitle(event.target.value);
@@ -16,13 +17,18 @@ function AddBooks() {
   }
   async function handleSubmit(event) {
     event.preventDefault();
+    setLoading(true);
     const book = {
       title,
       author,
     };
-    await addNewBook(book);
-    setTitle("");
-    setAuthor("");
+    try {
+      await addNewBook(book);
+      setTitle("");
+      setAuthor("");
+    } finally {
+      setLoading(false);
+    }
   }
   return (
     <>
